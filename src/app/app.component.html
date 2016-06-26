@@ -1,0 +1,28 @@
+<span router-active>
+      <button [routerLink]="['Index']">
+        Index
+      </button>
+    </span>
+<span router-active>
+      <button [routerLink]="['Home']">
+        Home
+      </button>
+    </span>
+<span router-active>
+      <button [routerLink]="['About']">
+        About
+      </button>
+    </span>
+
+<button class="btn btn-default" (click)="login()">
+    Login
+</button>
+<button class="btn btn-default" (click)="logoff()">
+    Logout
+</button>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>

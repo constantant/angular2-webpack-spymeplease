@@ -9,6 +9,9 @@ import { HTTP_PROVIDERS } from '@angular/http';
 // Angular 2 Router
 import { ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
+// Provider for OAuthService
+import { OAuthService } from 'angular2-oauth2/oauth-service';
+
 /*
 * Application Providers/Directives/Pipes
 * providers/directives/pipes that only live in our browser environment
@@ -21,5 +24,6 @@ export const APPLICATION_PROVIDERS = [
 ];
 
 export const PROVIDERS = [
+  OAuthService,
   ...APPLICATION_PROVIDERS
 ];
